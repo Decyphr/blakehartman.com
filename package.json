@@ -9,10 +9,14 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "netlify:dev": "netlify dev:exec npm run dev",
+    "netlify:build": "netlify build:exec npm run build",
+    "netlify:init": "netlify init",
     "netlify:login": "netlify login"
   },
   "dependencies": {
     "@astrojs/netlify": "^1.0.3",
+    "@astrojs/prefetch": "^0.0.7",
     "@astrojs/svelte": "^1.0.0",
     "@astrojs/tailwind": "^2.0.1",
     "astro": "^1.2.6",

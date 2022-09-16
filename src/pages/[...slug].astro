@@ -1,0 +1,24 @@
+---
+import Layout from "@src/layouts/Layout.astro";
+import { GET_PAGE } from "@src/graphql/queries/getPage";
+import { contentful } from "@src/utils/contentfulClient";
+
+const { slug } = Astro.params;
+
+const {
+  pagesCollection: { pages },
+} = await contentful(GET_PAGE, { preview: false, slug: slug });
+
+if (!pages.length) {
+  return new Response(null, {
+    status: 404,
+    statusText: "Not found",
+  });
+}
+
+const page = pages[0];
+---
+
+<Layout title={page.title}>
+  <h1>{page.title}</h1>
+</Layout>
