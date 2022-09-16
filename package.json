@@ -1,0 +1,25 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev --port 8000",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "netlify:login": "netlify login"
+  },
+  "dependencies": {
+    "@astrojs/netlify": "^1.0.3",
+    "@astrojs/svelte": "^1.0.0",
+    "@astrojs/tailwind": "^2.0.1",
+    "astro": "^1.2.6",
+    "svelte": "^3.50.1",
+    "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {
+    "netlify-cli": "^11.8.0"
+  }
+}
