@@ -6,7 +6,17 @@ module.exports = {
       sans: ['Space Grotesk', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-		extend: {},
+		extend: {
+			colors: {
+				brutal: {
+					opal: "#A9C8C0",
+					brandy: "#DBBC8E"
+				}
+			},
+			boxShadow: {
+				brutal: "8px 8px 0 #000000",
+			}
+		},
 	},
 	plugins: [],
 }

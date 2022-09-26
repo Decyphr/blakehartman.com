@@ -4,5 +4,15 @@ import Hero from "@src/components/homepage/Hero.svelte";
 ---
 
 <Layout title="Blake Hartman | Web Design">
-  <Hero />
+  <Hero client:idle />
+  <section id="contact" class="h-screen">
+    <h2 class="font-bold -tracking-normal text-6xl mb-6">
+      Let&apos;s get in touch.
+    </h2>
+    <form>
+      <label>
+        <input name="name" type="text" placeholder="Name" />
+      </label>
+    </form>
+  </section>
 </Layout>
